@@ -2,6 +2,14 @@
 
 A reproducibility-focused research project studying whether the reported benefits of attention gates in Attention U-Net can be reproduced under a controlled experimental protocol.
 
+## Why This Project Matters for a Research Internship
+
+This repository is being developed as a **research portfolio project**. Its purpose is to demonstrate research ability through a complete process: literature review, research-question formulation, experimental design, implementation, controlled experiments, analysis, limitations, and reproducibility.
+
+It is intended to support—not replace—the broader evidence required in a competitive research-internship application.
+
+See [`research/mitacs_alignment.md`](research/mitacs_alignment.md) for the evidence this project is designed to produce.
+
 ## Research Question
 
 **Can Attention U-Net reproduce the reported advantages of attention gates for biomedical image segmentation, and what trade-offs do the gates introduce in segmentation quality and computational cost compared with a standard U-Net?**
@@ -18,6 +26,8 @@ A reproducibility-focused research project studying whether the reported benefit
 8. Analyze qualitative segmentation behavior.
 9. Compare reproduced findings with the original paper's claims.
 10. Document limitations, deviations and reproducibility details.
+11. Produce a research-style technical report suitable for portfolio review.
+12. Preserve experiment configurations, seeds, results and research notes so another researcher can reproduce the study.
 
 ## Hypothesis
 
@@ -46,6 +56,24 @@ Baseline: Ronneberger et al., *U-Net: Convolutional Networks for Biomedical Imag
 
 All model comparisons should use the same dataset split, preprocessing, random-seed policy, optimizer family, training budget and evaluation protocol unless an experiment explicitly studies one of these variables.
 
+## Research Evidence Roadmap
+
+A finished portfolio-quality study should contain:
+
+- Literature review with source extraction.
+- Explicit research question and hypotheses.
+- Dataset provenance and licensing/access notes.
+- Reproducible environment and seed policy.
+- Baseline U-Net implementation and experiment.
+- Attention U-Net implementation and experiment.
+- Attention-gate ablation study.
+- Quantitative metrics and computational measurements.
+- Repeated-run/statistical analysis where feasible.
+- Qualitative error analysis and figures.
+- Comparison against the published study, including documented deviations.
+- Final research report and reproducibility instructions.
+- Honest research diary and hour log.
+
 ## Repository Structure
 
 ```text
@@ -56,6 +84,7 @@ research/
   experimental_protocol.md
   reproducibility.md
   limitations.md
+  mitacs_alignment.md
   hour_log.md
 
 src/
@@ -128,6 +157,10 @@ No performance numbers are currently reported. Results folders contain templates
 ## Ethics and Scope
 
 This project is an academic research/reproducibility study. It does not provide clinical diagnoses, treatment recommendations, or validated medical decision support. Dataset licenses and usage conditions must be checked before downloading or redistributing data.
+
+## Research Integrity
+
+This repository deliberately does not fabricate research hours, experimental improvements, publications, awards, supervisor endorsements, or clinical claims. Any result included in the final study must be traceable to an executed experiment and recorded methodology.
 
 ## License
 
